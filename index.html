@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      .output {
+        width: 700px;
+        margin: 40px auto;
+      }
+      .result {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .result span {
+        display: block;
+        line-height: 50px;
+        border: 1px solid #000;
+        width: 24%;
+        text-align: center;
+        font-size: 20px;
+        height: 50px;
+      }
+      .result span:nth-of-type(2) {
+        width: 10%;
+        font-size: 30px;
+        font-weight: 700;
+        border: none;
+        background: rgba(173, 211, 241, 0.3);
+        border: 1px solid rgba(173, 211, 241, 0.7);
+      }
+      button {
+        cursor: pointer;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        padding: 10px 25px;
+        color: #fff;
+        background: #000;
+      }
+      p {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>계산기</h1>
+    <div class="output">
+      <p class="result">
+        <span class="num1"></span>
+        <span class="op"></span>
+        <span class="num2"></span>
+        =
+        <span class="num3">0</span>
+      </p>
+      <p>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-number>0</button>
+      </p>
+      <p>
+        <button data-operation>+</button>
+        <button data-operation>-</button>
+        <button data-operation>*</button>
+        <button data-operation>/</button>
+        <button data-operation>%</button>
+      </p>
+      <p>
+        <button data-equals>=</button>
+        <button data-delete>DEL</button>
+      </p>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
