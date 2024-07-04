@@ -13,3 +13,7 @@
 
 - Javascript 연습
 - swith ~ case 활용
+
+## 👩🏻‍💻 주요 기능
+- 각각 button마다 [data-ooo] 형태의 사용자데이터 정의 활용
+- 사칙연산 구현을 위해 switch~case 문법 활용
